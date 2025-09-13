@@ -1,0 +1,42 @@
+:root {
+    /* Colors */
+    --midnight: #121212;
+    --midnight-hover: #1C1C1C;
+    --midnight-active: #2A2A2A;
+
+    --sky-blue: #2B7CB8;
+    --sky-blue-hover: #1E5F8C;
+    --sky-blue-active: #164A6B;
+    --sky-blue-background: #E8F4FA;
+
+    --lavender: #9674FC;
+    --lavender-hover: #7F5CE6;
+    --lavender-active: #6844D0;
+    --lavender-background: #F0EBFF;
+
+    --forest: #04724D;
+    --forest-hover: #035A3D;
+    --forest-active: #02422D;
+    --forest-background: #E6F2ED;
+
+    --crimson: #A30000;
+    --crimson-hover: #890000;
+    --crimson-active: #6F0000;
+    --crimson-background: #FFEBEE;
+
+    --ASH: #B3B3B3;
+    --ash-hover: #9E9E9E;
+    --ash-active: #7D7D7D;
+
+    --snow: #FFFFFF;
+    --snow-hover: #F5F5F5;
+    --snow-active: #E0E0E0;
+
+    /* Font sizes (1em = 16px) */
+    --font-size-xs: 0.75em;    /* 12px */
+    --font-size-sm: 0.875em;   /* 14px */
+    --font-size-md: 1em;       /* 16px */
+    --font-size-lg: 1.125em;   /* 18px */
+    --font-size-xl: 1.25em;    /* 20px */
+    --font-size-xxl: 1.5em;    /* 24px */
+}
