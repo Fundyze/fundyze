@@ -7,7 +7,7 @@ import Button from '../../../components/Button/Button';
 import fundyzeLogo from '../../../assets/fundyze_logo.svg';
 
 export default function Header() {
-    const [isLoggedIn, setIsLoggedIn] = useState(true); // Example state for user authentication
+    const [isLoggedIn, setIsLoggedIn] = useState(false); // Example state for user authentication
   
   return (
     <header className={styles.header}>
@@ -25,7 +25,7 @@ export default function Header() {
         {!isLoggedIn ? (
           <>
             <Button variant="primary" size="sm">Login</Button>
-            <Button variant="secondary" size="sm">Sign Up</Button>
+            <Button variant="primary" size="sm">Sign Up</Button>
           </>
         ) : (
           <Button variant="tertiary" size="sm">Upgrade to the Pro plan</Button>
