@@ -3,7 +3,7 @@
 .button {
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.15s ease;
     min-width: 65px;
     min-height: 22px;
 }
@@ -30,6 +30,12 @@
 .button.primary {
     background-color: var(--sky-blue);
     color: var(--snow);
+}
+.button.primary:hover {
+    background-color: var(--sky-blue-hover);
+}
+.button.primary:active {
+    background-color: var(--sky-blue-active);
 }
 
 .button.secondary {
