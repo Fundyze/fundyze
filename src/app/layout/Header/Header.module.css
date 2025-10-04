@@ -1,0 +1,42 @@
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--midnight-hover);
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo {
+    height: 22px;
+    width: 22px;
+}
+
+.title {
+    font-size: var(--font-size-md);
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(45deg, var(--sky-blue), var(--lavender));
+}
+
+/* Content section */
+.content {
+    flex: 1;
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--snow);
+}
+
+/* Actions section */
+.actions {
+    display: flex;
+    gap: 10px;
+}

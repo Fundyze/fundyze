@@ -1,0 +1,41 @@
+/* Button styles */
+
+.button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 65px;
+    min-height: 22px;
+}
+
+/* Button sizes */
+
+.button.sm {
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.button.md {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.button.lg {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Button variants */
+.button.primary {
+    background-color: var(--sky-blue);
+    color: var(--snow);
+}
+
+.button.secondary {
+    /* TODO: Implement secondary button styles */
+}
+
+.button.tertiary {
+    background: linear-gradient(30deg, var(--sky-blue), var(--lavender));
+}
