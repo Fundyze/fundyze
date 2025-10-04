@@ -12,13 +12,15 @@ export default function Header() {
   return (
     <header className={styles.header}>
       {/* Logo section */}
-      <div className={styles.logoContainer}>
+      <a href='/' className={styles.logoContainer}>
           <img src={fundyzeLogo} alt="Fundyze Logo" className={styles.logo} />
           <h1 className={styles.title}>Fundyze</h1>
-      </div>
+      </a>
       {/* Content section */}
       <div className={styles.content}>
-          {/* Future content such as navigation links or user profile can go here */}
+        <ul className={styles.navList}>
+          <li><a className={styles.navLink} href="#">SCI Profitability Simulator</a></li>
+        </ul>
       </div>
       {/* Actions section */}
       <div className={styles.actions}>

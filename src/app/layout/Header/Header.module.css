@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    text-decoration: none;
 }
 
 .logo {
@@ -26,6 +27,7 @@
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(45deg, var(--sky-blue), var(--lavender));
+    margin: 0;
 }
 
 /* Content section */
@@ -36,8 +38,77 @@
     color: var(--snow);
 }
 
+/* Navigation links */
+.navList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navLink {
+    color: var(--ash);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    position: relative;
+    transition: color 0.15s;
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.15s;
+    transform-origin: left;
+    pointer-events: none;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+}
+
+
 /* Actions section */
 .actions {
     display: flex;
     gap: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: 
+            "logo actions"
+            "content content";
+        height: auto;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logoContainer {
+        grid-area: logo;
+    }
+
+    .actions {
+        grid-area: actions;
+        align-self: center;
+    }
+
+    .content {
+        grid-area: content;
+        text-align: left;
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
 }
