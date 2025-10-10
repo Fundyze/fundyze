@@ -30,8 +30,10 @@ export default function Header() {
         <LanguageSelector />
         {!isLoggedIn ? (
           <>
-            <Button disabled={true} variant="primary" size="sm">{t('header.actions.login')}</Button>
-            <Button disabled={true} variant="primary" size="sm">{t('header.actions.signUp')}</Button>
+            <span className={styles.hideOnMobile}>
+              <Button disabled={true} variant="primary" size="md">{t('header.actions.login')}</Button>
+            </span>
+            <Button disabled={true} variant="primary" size="md">{t('header.actions.signUp')}</Button>
           </>
         ) : (
           <Button variant="tertiary" size="sm">{t('header.actions.upgrade')}</Button>

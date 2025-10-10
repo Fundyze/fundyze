@@ -111,4 +111,8 @@
         padding: 0;
         margin: 0;
     }
+
+    .hideOnMobile { /* Hide specific elements on mobile */
+        display: none;
+    }
 }
