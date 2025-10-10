@@ -26,8 +26,8 @@ export default function Header() {
       <div className={styles.actions}>
         {!isLoggedIn ? (
           <>
-            <Button variant="primary" size="sm">Login</Button>
-            <Button variant="primary" size="sm">Sign Up</Button>
+            <Button disabled={true} variant="primary" size="sm">Login</Button>
+            <Button disabled={true} variant="primary" size="sm">Sign Up</Button>
           </>
         ) : (
           <Button variant="tertiary" size="sm">Upgrade to the Pro plan</Button>
