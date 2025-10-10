@@ -1,0 +1,29 @@
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.langButton {
+  background: none;
+  border: none;
+  color: var(--ash);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.langButton:hover {
+  color: var(--ash-hover);
+}
+
+.langButton.active {
+  color: var(--sky-blue);
+  font-weight: 600;
+}
+
+.separator {
+  color: var(--ash);
+  font-size: var(--font-size-sm);
+}

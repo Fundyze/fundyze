@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes } from "react-router-dom"
+
+import './i18n'
 
 // Importing pages
 // TODO

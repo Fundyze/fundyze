@@ -1,0 +1,23 @@
+{
+  "header": {
+    "nav": {
+      "sciSimulator": "Simulateur de rentabilité SCI"
+    },
+    "actions": {
+      "login": "Connexion",
+      "signUp": "Inscription",
+      "upgrade": "Passer au plan Pro"
+    }
+  },
+  "footer": {
+    "copyright": "Fundyze. Tous droits réservés.",
+    "about": "À propos",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookie": "Politique de cookies",
+    "contact": "Contactez-nous"
+  },
+  "common": {
+    "language": "Langue"
+  }
+}

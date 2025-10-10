@@ -1,0 +1,23 @@
+{
+  "header": {
+    "nav": {
+      "sciSimulator": "SCI Profitability Simulator"
+    },
+    "actions": {
+      "login": "Login",
+      "signUp": "Sign Up",
+      "upgrade": "Upgrade to the Pro plan"
+    }
+  },
+  "footer": {
+    "copyright": "Fundyze. All rights reserved.",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "language": "Language"
+  }
+}

@@ -1,14 +1,17 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import styles from './Header.module.css';
 
 import Button from '../../../components/Button/Button';
+import LanguageSelector from '../../../components/LanguageSelector/LanguageSelector';
 
 import fundyzeLogo from '../../../assets/fundyze_logo.svg';
 
 export default function Header() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // Example state for user authentication
-  
+    const [isLoggedIn] = useState(false); // Example state for user authentication
+    const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       {/* Logo section */}
@@ -19,18 +22,19 @@ export default function Header() {
       {/* Content section */}
       <div className={styles.content}>
         <ul className={styles.navList}>
-          <li><a className={styles.navLink} href="#">SCI Profitability Simulator</a></li>
+          <li><a className={styles.navLink} href="#">{t('header.nav.sciSimulator')}</a></li>
         </ul>
       </div>
       {/* Actions section */}
       <div className={styles.actions}>
+        <LanguageSelector />
         {!isLoggedIn ? (
           <>
-            <Button disabled={true} variant="primary" size="sm">Login</Button>
-            <Button disabled={true} variant="primary" size="sm">Sign Up</Button>
+            <Button disabled={true} variant="primary" size="sm">{t('header.actions.login')}</Button>
+            <Button disabled={true} variant="primary" size="sm">{t('header.actions.signUp')}</Button>
           </>
         ) : (
-          <Button variant="tertiary" size="sm">Upgrade to the Pro plan</Button>
+          <Button variant="tertiary" size="sm">{t('header.actions.upgrade')}</Button>
         )}
       </div>
     </header>
